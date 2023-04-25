@@ -13,6 +13,7 @@
 		4895961D29F8084100E11740 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4895961B29F8084100E11740 /* Main.storyboard */; };
 		4895961F29F8084200E11740 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4895961E29F8084200E11740 /* Assets.xcassets */; };
 		4895962229F8084200E11740 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4895962029F8084200E11740 /* LaunchScreen.storyboard */; };
+		48DFA4D429F809B3008EC174 /* MainModule in Frameworks */ = {isa = PBXBuildFile; productRef = 48DFA4D329F809B3008EC174 /* MainModule */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48DFA4D429F809B3008EC174 /* MainModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +44,7 @@
 			children = (
 				4895961429F8084100E11740 /* VisionOCRSample */,
 				4895961329F8084100E11740 /* Products */,
+				48DFA4D229F809B3008EC174 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +70,13 @@
 			path = VisionOCRSample;
 			sourceTree = "<group>";
 		};
+		48DFA4D229F809B3008EC174 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +93,9 @@
 			dependencies = (
 			);
 			name = VisionOCRSample;
+			packageProductDependencies = (
+				48DFA4D329F809B3008EC174 /* MainModule */,
+			);
 			productName = VisionOCRSample;
 			productReference = 4895961229F8084100E11740 /* VisionOCRSample.app */;
 			productType = "com.apple.product-type.application";
@@ -358,6 +371,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		48DFA4D329F809B3008EC174 /* MainModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MainModule;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4895960A29F8084100E11740 /* Project object */;
 }

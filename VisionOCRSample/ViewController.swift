@@ -6,14 +6,13 @@
 //
 
 import UIKit
+import MainModule
 
 class ViewController: UIViewController {
+    private let recognizer = Recognizer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
 }
 
