@@ -6,15 +6,14 @@
 //
 
 import UIKit
-import CoreGraphics
 
 public class ResourceProvidor {
     public init() {}
 
-    public func createImage(with url: URL?) async throws -> CGImage? {
+    public func createImage(with url: URL?) async throws -> UIImage? {
         guard let url else { return nil }
         let session = URLSession(configuration: .default)
         let (data, _) = try await session.data(for: URLRequest(url: url))
-        return UIImage(data: data)?.cgImage
+        return UIImage(data: data)
     }
 }
