@@ -10,6 +10,7 @@ import MainModule
 
 class ViewController: UIViewController {
     private let recognizer = Recognizer()
+    private let resourceProvidor = ResourceProvidor()
 
     override func viewDidLoad() {
         super.viewDidLoad()
